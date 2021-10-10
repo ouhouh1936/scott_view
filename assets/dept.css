@@ -1,0 +1,63 @@
+.deptSection {
+  width: 100%;
+  padding: 15px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.deptSection .deptHeader {
+  width: 100%;
+  height: 30px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  background-color: rgb(76, 112, 221);
+  color: #fff;
+}
+
+.deptSection .deptHeader li {
+  text-align: center;
+}
+
+.deptSection .deptHeader li:nth-child(1) {
+  width: 25%;
+}
+
+.deptSection .deptHeader li:nth-child(2) {
+  width: 25%;
+}
+.deptSection .deptHeader li:nth-child(3) {
+  width: 50%;
+}
+
+.deptSection .deptBody {
+  width: 100%;
+  height: 30px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #999;
+}
+
+.deptSection .deptBody li {
+  text-align: center;
+}
+
+.deptSection .deptBody li:nth-child(1) {
+  width: 25%;
+}
+
+.deptSection .deptBody li:nth-child(2) {
+  width: 25%;
+}
+.deptSection .deptBody li:nth-child(3) {
+  width: 50%;
+}

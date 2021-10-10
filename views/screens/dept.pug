@@ -1,0 +1,13 @@
+extends ../layouts/base.pug
+
+block content 
+    section.deptSection 
+        ul.deptHeader 
+            li 부서 번호
+            li 부서명 
+            li 근무지 
+        each row in rows 
+            ul.deptBody  
+                li #{row.DEPTNO}
+                li #{row.DNAME} 
+                li #{row.LOC}

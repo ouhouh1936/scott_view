@@ -1,0 +1,28 @@
+extends ../layouts/base.pug
+
+block content 
+    section.empSection 
+        form.deptSearch(Action="/emp", method="GET")
+            select(name="sDept")
+                option(value="" selected) ALL
+                option(value="ACCOUNTING") ACCOUNTING
+                option(value="RESEARCH") RESEARCH
+                option(value="SALES") SALES
+            button SEARCH 
+        ul.empHeader 
+            li 사원 번호
+            li 사원명
+            li 직무
+            li 입사일
+            li 급여
+            li 부서명
+            li 근무지
+        each row in rows 
+            ul.empBody  
+                li #{row.EMPNO}
+                li #{row.ENAME}
+                li #{row.JOB}
+                li #{row.HIREDATE} 
+                li #{row.SAL}
+                li #{row.DNAME}
+                li #{row.LOC} 
